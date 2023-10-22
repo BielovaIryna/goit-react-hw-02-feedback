@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { Secttion } from './section/Section';
+import { Section } from './section/Section';
 export class App extends Component {
   state = {
     good: 0,
@@ -26,7 +26,7 @@ export class App extends Component {
   };
   render() {
     return <div>
-      <Secttion
+      <Section
       state={this.state}
       onLeaveFeedback={this.onLeaveFeedback}
       countTotalFeedback={this.countTotalFeedback()}
